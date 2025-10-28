@@ -752,12 +752,16 @@ const toggle_btn=document.querySelector('.toggle-btn');
 const close_sidenav=document.querySelector('.close-sidenav');
 
 
+
+
 close_sidenav.addEventListener('click',()=>{
      left_nav.classList.remove('nav-btn-active');
+ document.body.style.overflow = 'none';
 })
 
 
 toggle_btn.addEventListener('click',()=>{
+ document.body.style.overflow = 'hidden';
 
 left_nav.classList.toggle('nav-btn-active');
 

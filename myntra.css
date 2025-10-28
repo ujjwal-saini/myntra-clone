@@ -552,7 +552,7 @@ footer div div {
         justify-content: center;
         align-items: center;
         height: 200px;
-        background-color: rgb(75, 54, 54);
+        background-color: rgba(75, 54, 54, 0.486);
         width: 100%;
         position: relative;
     }
@@ -563,11 +563,12 @@ footer div div {
         top: 12px;
         right: 10px;
         cursor: pointer;
+        color: #000;
     }
 
     .left-nav {
         display: flex;
-        position: absolute;
+        position: fixed;
         top: 0px;
         left: -100%;
         flex-direction: column;
@@ -612,14 +613,16 @@ footer div div {
         font-size: 16px;
         left: 27px;
     }
-.img-slider{
-    height: auto;
-}
+
+    .img-slider {
+        height: auto;
+    }
+
     .slider_img img {
         height: 20vh;
         width: 100%;
         object-fit: cover;
-        
+
     }
 
 
@@ -632,7 +635,7 @@ footer div div {
     .img_wm img {
         height: 250px;
         width: 250px;
-        
+
     }
 
 
