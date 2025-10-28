@@ -319,38 +319,61 @@ ul li:hover .profile-dropdown {
 
 
 } */
- .img-slider {
-  width: 100%;
-  height: 55vh;
-  overflow: hidden;
-  position: relative;
+.img-slider {
+    width: 100%;
+    height: 55vh;
+    overflow: hidden;
+    position: relative;
 }
 
 .slider_img {
-  display: flex;
-  width: 300%; /* 3 images × 100% */
-  height: 100%;
-  animation: slide 12s infinite ease-in-out;
+    display: flex;
+    width: 300%;
+    /* 3 images × 100% */
+    height: 100%;
+    animation: slide 12s infinite ease-in-out;
 }
 
 .slider_img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* Animation Logic */
 @keyframes slide {
-   0% { transform: translateX(100%); }      /* Show 1st image */
-  20% { transform: translateX(100%); }
+    0% {
+        transform: translateX(100%);
+    }
 
-  33% { transform: translateX(0%); }  /* Show 2nd image */
-  53% { transform: translateX(0%); }
+    /* Show 1st image */
+    20% {
+        transform: translateX(100%);
+    }
 
-  66% { transform: translateX(-100%); }  /* Show 3rd image */
-  86% { transform: translateX(-100%); }
+    33% {
+        transform: translateX(0%);
+    }
 
-  100% { transform: translateX(100%); } /* Back to 1st */
+    /* Show 2nd image */
+    53% {
+        transform: translateX(0%);
+    }
+
+    66% {
+        transform: translateX(-100%);
+    }
+
+    /* Show 3rd image */
+    86% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+
+    /* Back to 1st */
 }
 
 
@@ -590,10 +613,11 @@ footer div div {
         left: 27px;
     }
 
- .slider_img img {
-    height: 50vh;
-    object-fit: cover;
-  }
+    .slider_img img {
+        height: 40vh;
+        width: 100%;
+        object-fit: cover;
+    }
 
 
     .men-women {
@@ -601,11 +625,13 @@ footer div div {
         overflow-x: auto;
         overflow-y: hidden;
     }
-    .img_wm img{
-    height: 250px;
-    width: 250px;
-}
- 
+
+    .img_wm img {
+        height: 250px;
+        width: 250px;
+        
+    }
+
 
     main section {
         margin: 90px 0px;
