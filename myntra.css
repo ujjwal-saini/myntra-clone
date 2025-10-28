@@ -2,6 +2,13 @@
     margin: 0;
     padding: 0;
 }
+li {
+  user-select: none;     /* text select hone se rokta hai */
+  -webkit-user-select: none; /* Safari aur mobile browsers ke liye */
+  -ms-user-select: none;     /* old Edge ke liye */
+  cursor: pointer;       /* pointer dikhe (button jaisa) */
+}
+
 
 .top-toggle-profile {
     display: none;
