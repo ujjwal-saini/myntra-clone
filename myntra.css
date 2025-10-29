@@ -2,12 +2,6 @@
     margin: 0;
     padding: 0;
 }
-li {
-  user-select: none;     /* text select hone se rokta hai */
-  -webkit-user-select: none; /* Safari aur mobile browsers ke liye */
-  -ms-user-select: none;     /* old Edge ke liye */
-  cursor: pointer;       /* pointer dikhe (button jaisa) */
-}
 
 
 .top-toggle-profile {
@@ -219,7 +213,6 @@ nav ul li {
 
 .search-box input:focus {
     border: 1px solid #8078787a;
-    /* box-shadow: 0 0 5px rgba(128, 120, 120, 0.5); */
     outline: none;
 }
 
@@ -277,55 +270,6 @@ ul li:hover .profile-dropdown {
 }
 
 
-/* .img-slider {
-    overflow: hidden;
-    height: 55vh;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.slider_img {
-    width: 3600px;
-    height: 55vh;
-    position: relative;
-    animation: mysliders 10s infinite alternate ease-in-out;
-}
-
-.slider_img img {
-    width: 1200px;
-    height: 55vh;
-}
-
-
-
-@keyframes mysliders {
-
-    0% {
-        left: 1200px;
-    }
-
-    30% {
-        left: 1200px;
-    }
-
-    35% {
-        left: -0%;
-    }
-
-    65% {
-        left: -0%;
-    }
-
-    70% {
-        left: -1200px;
-    }
-
-    100% {
-        left: -1200px;
-    }
-
-
-} */
 .img-slider {
     width: 100%;
     height: 55vh;
@@ -336,7 +280,6 @@ ul li:hover .profile-dropdown {
 .slider_img {
     display: flex;
     width: 300%;
-    /* 3 images × 100% */
     height: 100%;
     animation: slide 12s infinite ease-in-out;
 }
@@ -347,13 +290,11 @@ ul li:hover .profile-dropdown {
     object-fit: cover;
 }
 
-/* Animation Logic */
 @keyframes slide {
     0% {
         transform: translateX(100%);
     }
 
-    /* Show 1st image */
     20% {
         transform: translateX(100%);
     }
@@ -362,7 +303,6 @@ ul li:hover .profile-dropdown {
         transform: translateX(0%);
     }
 
-    /* Show 2nd image */
     53% {
         transform: translateX(0%);
     }
@@ -371,7 +311,6 @@ ul li:hover .profile-dropdown {
         transform: translateX(-100%);
     }
 
-    /* Show 3rd image */
     86% {
         transform: translateX(-100%);
     }
@@ -380,7 +319,6 @@ ul li:hover .profile-dropdown {
         transform: translateX(100%);
     }
 
-    /* Back to 1st */
 }
 
 
